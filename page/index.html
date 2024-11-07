@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Узнай национальность по имени</title>
+    <link rel="stylesheet" href="/src/styles/style.css">
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="title">Find out your nationality by name</h1>
+    </header>
+    <main class="container">
+      <div class="input-and-button">
+        <input id="name-input" type="text" class="input" placeholder="Enter name" pattern="/^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$/u">
+        <button type="submit" class="button_search" id="submitButton">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="search-icon" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+        </button>
+      </div>
+      <div class="fetch-info">
+        <span class="fetch-name">
+          <!-- userName -->
+        </span>
+        <span class="fetch-country-one">
+          <!-- country -->
+        </span>
+        <span class="fetch-probability-one">
+          <!-- probability -->
+        </span>
+        <span class="fetch-country-two">
+            <!-- country two -->
+        </span>
+        <span class="fetch-probability-two">
+            <!-- probability two -->
+        </span>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="bg"></div>
+      <span>Made by kirillxxn</span>
+      <span><i><a class="github-link" href="https://github.com/kirillxxn" target="_blank">Website</a></i></span>
+    </footer>
+    <script src="/src/scripts/main.js"></script>
+  </body>
+</html>
